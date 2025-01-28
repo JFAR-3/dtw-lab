@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dtw-lab"
+version = "0.1.0"
+description = "Digital Transformation Workshops lab"
+authors = ["Enrique Alejo <enrique.m.alejo@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dtw_lab", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+seaborn = "^0.13.2"
+pandas = "^2.2.3"
+scikit-learn = "^1.6.0"
+requests = "^2.32.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
