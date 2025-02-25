@@ -136,7 +136,9 @@ def calculate_statistic(
     elif measure == "median":
         return column.median()
     elif measure == "mode":
-        column.mode()[0]
+        mode_values = column.mode()
+        return mode_values.iloc[0] if not mode_values.empty else None
+
     
     else:
         raise ValueError("Invalid measure. Choose 'mean', 'median', or 'mode'.")
