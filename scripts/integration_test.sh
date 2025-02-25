@@ -7,7 +7,7 @@ CONTAINER_NAME="team${TEAM_NUMBER}_container"
 docker run -d -p 80:80 --name $CONTAINER_NAME $LOGIN_SERVER/team$TEAM_NUMBER:$PACKAGE_VERSION
 
 echo "Waiting for container to start..."
-sleep 20
+sleep 40
 
 curl -s -o /dev/null -w "%{http_code}" http://localhost:80
 
