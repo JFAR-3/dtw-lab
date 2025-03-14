@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from pathlib import Path
 import toml
-from dtw_lab.lab1 import (
+from lab1 import (
     read_csv_from_google_drive,
     visualize_data,
     calculate_statistic,
