@@ -1,0 +1,21 @@
+{
+    "name": "Dev Container",
+    "image": "ealejo/dtw",
+    "runArgs": ["--privileged"],
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "mhutchie.git-graph"
+            ]
+        }
+    },
+    "forwardPorts": [
+        8000,
+        8080,
+        80
+    ]
+}
